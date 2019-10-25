@@ -1,7 +1,7 @@
 runtime: python37
 env: standard
 service: default
-entrypoint: gunicorn -b :$PORT view:app
+entrypoint: gunicorn -b 0.0.0.0:$PORT view:app
 
 automatic_scaling:
   min_idle_instances: automatic
