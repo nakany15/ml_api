@@ -1,6 +1,6 @@
 runtime: python37
 env: standard
-service: ml-service
+service: default
 entrypoint: gunicorn -b :$PORT view:app
 
 automatic_scaling:
